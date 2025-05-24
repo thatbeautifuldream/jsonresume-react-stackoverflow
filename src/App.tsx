@@ -1,6 +1,9 @@
-import { Resume } from "./components/resume";
-import { resumeData } from "./utils/resume.data";
+import JsonResume from "./components/jsonresume/json-resume";
 
 export default function App() {
-  return <Resume resume={resumeData} />;
+  return (
+    <div className="min-h-screen font-sans">
+      <JsonResume />
+    </div>
+  );
 }
